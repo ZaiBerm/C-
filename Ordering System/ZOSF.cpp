@@ -302,10 +302,6 @@ void print_orders(vector <food> orders, double* bill)
 {
     *bill = 0;
 
-    cout << endl << endl;
-
-    cout << hborder << "YOUR ORDERS: " << endl << endl;
-
     cout << hborder;
     for (int i = 0; i < 90; i++)
     {
@@ -385,7 +381,7 @@ void print_ordersreceipt(vector <food> orders, double bill, double balance, doub
     cout << hborder;
     for (int i = 0; i < 90; i++)
     {
-        cout << "=";
+        cout << "-";
     }
     cout << endl << endl;
 
@@ -434,7 +430,7 @@ void print_ordersreceipt(vector <food> orders, double bill, double balance, doub
     cout << hborder;
     for (int i = 0; i < 90; i++)
     {
-        cout << "=";
+        cout << "-";
     }
     cout << endl << endl;
 

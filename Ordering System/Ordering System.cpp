@@ -228,6 +228,7 @@ checkout:
     system("cls");
 
     cout << "customer's pov:";
+    cout << endl << endl << hborder << "YOUR ORDERS: " << endl << endl;
     print_orders(orders, &totalbill);
 
     cout << endl << endl;
@@ -251,6 +252,7 @@ checkout:
         system("cls");
 
         cout << "cashier's pov:";
+        cout << endl << endl << hborder << "ORDERS: " << endl << endl;
         print_orders(orders, &totalbill);
 
         do
@@ -267,13 +269,11 @@ checkout:
 
             cout << endl << lborder << lborder << hborder << "\t       CHANGE: " << change << endl << endl;
 
-            do
-            {
-                cout << hborder << "PRINT THE RECEIPT? [1]YES, [2]NO: ";
-                cin >> selector;
-                cin_check();
-
-            } while (selector != 1 && selector != 2);
+            cout << hborder << "PRINTING RECEIPT";
+            Sleep(300); cout << ".";
+            Sleep(300); cout << ".";
+            Sleep(300); cout << ".";
+            Sleep(500);
 
             system("cls");
 
@@ -300,6 +300,8 @@ checkout:
 
         system("cls");
         cout << "customer's pov:";
+
+        cout << endl << endl << hborder << "YOUR ORDERS: " << endl << endl;
         print_orders(orders, &totalbill);
 
         cout << endl << endl << hborder << "[1]DECREASE ITEM, [2]INCREASE ITEM, [3]ADD ITEM, [4]BACK" << endl << endl;
@@ -318,6 +320,7 @@ checkout:
                 system("cls");
 
                 cout << "customer's pov:";
+                cout << endl << endl << hborder << "YOUR ORDERS: " << endl << endl;
                 print_orders(orders, &totalbill);
 
                 cout << endl << endl << hborder << "ENTER THE ID OF THE ITEM YOU WANT TO DECREASE. " << endl;
@@ -354,6 +357,7 @@ checkout:
                 system("cls");
 
                 cout << "customer's pov:";
+                cout << endl << endl << hborder << "YOUR ORDERS: " << endl << endl;
                 print_orders(orders, &totalbill);
 
                 cout << endl << endl << hborder << "ENTER THE ID OF THE ITEM YOU WANT TO INCREASE. " << endl;
